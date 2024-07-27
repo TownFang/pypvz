@@ -326,3 +326,26 @@ pyinstaller -F pypvz.py `
 Windows单文件封装版本无法通过终端显示日志，需要在日志文件中寻找崩溃原因
 * Windows默认日志文件路径为`~\AppData\Roaming\pypvz\run.log`
 * 其他操作系统为`~/.config/pypvz/run.log`，但一般可以在终端中显示时用终端中的输出即可
+
+## 补充
+```shell
+# 检查python版本 // python --version
+py --version
+# 检查pip版本
+pip --version
+# pip单次下载设置代理
+# pip install -r requirements.txt --proxy=127.0.0.1:7890
+# 安装所有的依赖
+pip install
+# 安装python-game 游戏引擎
+python -m pip install -U pygame==2.5.2 --user --proxy=http://127.0.0.1:7890
+# 安装Pyinstaller 
+python -m pip install -U pyinstaller --user --proxy=http://127.0.0.1:7890
+# 卸载pyinstaller
+pip uninstall pyinstaller
+# 检查pygame是否安装成功
+py -m pygame.examples.aliens
+```
++ [Pygame安装教程（2020版超详细）](https://developer.baidu.com/article/details/2918655)
++ [pygame news官网地址](https://www.pygame.org/news)
++ [如何一键安装所有第三方库文件？](https://github.com/jayboxyz/deeplearning-cv-notes/blob/master/01_python/python_basic/Python%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E6%89%80%E6%9C%89%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93.md)
